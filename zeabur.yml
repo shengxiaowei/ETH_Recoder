@@ -1,0 +1,13 @@
+name: eth-grid-backtest
+description: ETH 永续合约网格回测 & 蒙特卡洛模拟
+services:
+  - type: nodejs
+    name: web
+    startCommand: npm run start
+    buildCommand: npm run build
+    port: 3000
+    # 挂载持久化目录给 SQLite
+    mounts:
+      - target: /data
+    env:
+      DB_PATH: /data/eth_backtest.db

@@ -1,0 +1,40 @@
+# deps
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+build/
+
+# production
+dist/
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# vercel / zeabur
+.vercel
+
+# sqlite database
+data/
+*.db
+*.db-journal
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# drizzle
+drizzle/
